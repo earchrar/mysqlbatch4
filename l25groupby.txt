@@ -24,6 +24,7 @@
 		*error 
 		SELECT COUNT(*),DISTINCT city FROM customers;
 
+		SELECT city FROM customers GROUP BY city;
 		SELECT COUNT(*),city FROM customers GROUP BY city;
 		SELECT city,COUNT(*) FROM customers GROUP BY city;
 
@@ -38,4 +39,22 @@
 		SELECT * FROM customers;
 
 		SELECT COUNT(*),amount FROM customers GROUP BY amount;
+
+		SELECT city FROM customers GROUP BY city;
+		SELECT city,SUM(amount) FROM customers GROUP BY city;
+
+		SELECT city,MIN(amount) FROM customers GROUP BY city;
+		SELECT city,MAX(amount) FROM customers GROUP BY city;
+
+		SELECT city,COUNT(*),MIN(amount) FROM customers GROUP BY city;
+		SELECT city,COUNT(*),MAX(amount) FROM customers GROUP BY city;
+
+		SELECT city,AVG(amount) FROM customers GROUP BY city;
+
+		SELECT CONCAT('Customer in ',city) AS "Show City", ,MAX(amount) FROM customers GROUP BY city;
+
+	--------------------------------------------------------------
+
+
+
 

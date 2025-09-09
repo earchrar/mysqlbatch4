@@ -1,45 +1,35 @@
-=> ORDER BY KeyWord (Sorting our results )
+=> ORDER BY Keyword (Sorting our results)
 
-	=> Syntax 
-		SELECT column1,column2,column3.... FROM tablename
-		ORDER BY columnname ASC|DESC;
+SELECT column1,column2,column3,.. FROM tablename 
+ORDER BY column ASC|DESC;
 
-	--------------------------------------------------------------------
+-----------------------------------------------------------------------------------
 
-	Exercise 
+= EXERCISE 
 
-		SELECT * FROM customers;
+SELECT * FROM customers;
 
-		SELECT * FROM customers ORDER BY firstname ASC;
+SELECT * FROM customers ORDER BY firstname ASC; 
+SELECT * FROM customers ORDER BY firstname DESC; 
 
-		SELECT * FROM customers ORDER BY firstname DESC;
+SELECT * FROM customers ORDER BY firstname;
 
-		// Default = ASC
-		SELECT * FROM customers ORDER BY firstname;
+SELECT * FROM customers ORDER BY amount;
+SELECT * FROM customers ORDER BY amount DESC;
 
-		SELECT * FROM customers ORDER BY amount;
+SELECT id,firstname,lastname,amount,city FROM customers 
+WHERE amount > 200000 
+ORDER BY amount ASC;
 
-		SELECT * FROM customers ORDER BY amount DESC;
+SELECT id,firstname,lastname,amount,city FROM customers 
+WHERE amount > 200000 
+ORDER BY amount DESC;
 
-		SELECT id,firstname,lastname,amount,city FROM customers 
-		WHERE amount > 200000;
+SELECT * FROM customers ORDER BY firstname;
+SELECT * FROM customers ORDER BY firstname,age;
 
-		SELECT id,firstname,lastname,amount,city FROM customers 
-		WHERE amount > 200000
-		ORDER BY amount ASC;
+SELECT id,firstname,lastname,amount,city FROM customers ORDER BY 2;
+SELECT id,firstname,lastname,amount,city FROM customers ORDER BY 3;
+SELECT id,firstname,lastname,amount,city FROM customers ORDER BY 5;
 
-		SELECT id,firstname,lastname,amount,city FROM customers 
-		WHERE amount > 200000
-		ORDER BY amount DESC;
-
-		SELECT * FROM customers ORDER BY firstname;
-		SELECT * FROM customers ORDER BY firstname,age;
-
-		SELECT id,firstname,lastname,amount,city FROM customers ORDER BY 2;
-		SELECT id,firstname,lastname,amount,city FROM customers ORDER BY 3;
-		SELECT id,firstname,lastname,amount,city FROM customers ORDER BY 5;
-
-	--------------------------------------------------------------------
-
-
-
+-----------------------------------------------------------------------------------
