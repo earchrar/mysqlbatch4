@@ -127,7 +127,7 @@
 
 	Exercise 
 		Between with and 
-		(BETWEEN USE keyword(AND)
+		(BETWEEN USE keyword(AND))
 
 			SELECT firstname,lastname,age,gender FROM enginners;
 
@@ -141,6 +141,7 @@
 			WHERE gender = "male" AND age BETWEEN 18 AND 30;
 
 	-------------------------------------------------------------------------------------
+	
 	Exercise 
 		NOT BETWEEN with AND 
 
@@ -149,4 +150,6 @@
 
 			SELECT firstname,lastname,age,gender FROM enginners
 			WHERE NOT age BETWEEN 18 AND 30 AND gender = "female";
+
+	-------------------------------------------------------------------------------------
 

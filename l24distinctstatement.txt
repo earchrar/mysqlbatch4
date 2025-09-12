@@ -1,33 +1,33 @@
 => DISTINCT Statement 
-	
-	=>Syntax 
 
-		SELECT DISTINCT column1,column2,column3,....
-		FROM tablename; 
+=Syntax 
 
-	----------------------------------------------------------
+SELECT DISTNICT column1,column2,... 
+FROM tablename;
 
-	=> Exercise 
+-----------------------------------------------------------------------------------
 
-		SELECT * FROM customers;
+=EXERCISE 
 
-		SELECT city FROM customers;
+SELECT * FROM customers;
 
-		SELECT DISTINCT city FROM customers;
+SELECT city FROM customers;
 
-		SELECT age FROM customers;
+SELECT DISTINCT city FROM customers;
 
-		SELECT DISTINCT age FROM customers;
+SELECT age FROM customers;
 
-		SELECT DISTINCT age FROM customers ORDER BY age;
+SELECT DISTINCT age FROM customers;
 
-		ERROR ( NOTE : DISTINCT  condition column name must have in expression ) 
-		SELECT DISTINCT city FROM customers ORDER BY age;
+SELECT DISTINCT age FROM customers ORDER BY age;
 
-		SELECT DISTINCT age,city FROM customers ORDER BY city;
+*ERROR ( NOTE : DISTINCT condition column name must have in expression )
+SELECT DISTINCT city FROM customers ORDER BY age;
 
-		SELECT COUNT(DISTINCT city) FROM customers;
+SELECT DISTINCT age,city FROM customers ORDER BY age;
 
-	----------------------------------------------------------
+SELECT COUNT(DISTINCT city) FROM customers;
+
+-----------------------------------------------------------------------------------
 
 

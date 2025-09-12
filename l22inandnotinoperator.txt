@@ -57,6 +57,8 @@
 		WHERE city IN ('mandalay','yangon')
 		ORDER BY city ASC;
 
+	-----------------------------------------------------------------------
+
 	EXERCISE 
 		=> NOT IN 
 

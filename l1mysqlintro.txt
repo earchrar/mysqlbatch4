@@ -30,12 +30,12 @@
 	=				Equal 
 	> 				Greater than 
 	< 				Less than 
-	>= 			Greater than or Equal 
-	<= 			Less than or Equal 
+	>= 				Greater than or Equal 
+	<= 				Less than or Equal 
 	!= (or) 		<> Not Equal
 	BETWEEN 		Between as a certain rage 
 	LIKE 			Search for a pattern
-	IN 			To specify multiple possible valuse for a columns
+	IN 				To specify multiple possible valuse for a columns
 
 -------------------------------------------
 
