@@ -1,0 +1,12 @@
+=> EXERCISE 
+
+    CREATE TABLE IF NOT EXISTS vipmembers(
+        id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+        firstname VARCHAR(20),
+        lastname VARCHAR(20),
+        status INT DEFAULT 1
+    );
+
+    DESC vipmembers;
+    SHOW CREATE TABLE vipmembers;
+    SHOW INDEX FROM vipmembers;
